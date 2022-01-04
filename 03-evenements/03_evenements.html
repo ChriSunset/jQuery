@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evenements jquery</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: verdana;
+        }
+        fieldset {
+          margin: 30px 0;
+        }
+        #info {
+          position: fixed;
+          background: #454545;
+          color: #fff;
+          top: 0;
+          width: 100%;
+          display: block;
+          padding: 5px;
+          margin-bottom: 30px;
+        }
+        .titre {
+          font-weight: bold;
+          padding: 10px;
+          margin: 10px;
+        }
+        .zone1,
+        .zone2,
+        .zone3,
+        .zone4,
+        .zone5,
+        .zone6,
+        .zone7,
+        .zone8,
+        .zone9,
+        .zone10,
+        .zone11,
+        .zone12,
+        .zone13,
+        .zone14,
+        .zone15 {
+          background: LightSkyBlue;
+          padding: 20px;
+          margin: 20px;
+        }
+        input,
+        textarea,
+        select {
+          width: 100%;
+          padding: 5px;
+        }
+      </style>
+  </head>
+
+  <body>
+    
+    
+  
+      <!-- nous permet d'afficher la zone sur laquelle nous agissons -->
+      <div id="info">je ne fais rien...</div>
+  
+      <br /><br />
+  
+      <fieldset>
+        <p class="titre">1 / MOUSEOVER - SURVOLER LA ZONE1</p>
+        <div class="zone1">zone1</div>
+      <fieldset>
+  
+      <fieldset>
+        <p class="titre">2 / MOUSEMOVE - BOUGER SUR LA ZONE2</p>
+        <div class="zone2">zone2</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">
+          3 / MOUSEOUT - QUITTER LE SURVOL DE LA ZONE APRES AVOIR SURVOLER LA
+          ZONE3
+        </p>
+        <div class="zone3">zone3</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">
+          4 / MOUSEENTER + MOUSELEAVE - ENTRER ET SORTIR DE LA ZONE4
+        </p>
+        <div class="zone4">zone4</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">
+          5 / MOUSEUP - PRESSEZ PENDANT QUELQUES SECONDES LE CLIC GAUCHE SUR LA
+          ZONE5 ET LE RELACHER SUR LA ZONE5
+        </p>
+        <div class="zone5">zone5</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">6 / MOUSEDOWN - ENFONCEZ LE CLIC SUR LA ZONE6</p>
+        <div class="zone6">zone6</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">7 / CLICK - CLIQUER SUR LA ZONE7</p>
+        <div class="zone7">zone7</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">8 / DBLCLICK - DOUBLECLIQUER SUR LA ZONE8</p>
+        <div class="zone8">zone8</div>
+      </fieldset>
+  
+      <fieldset>
+        <p class="titre">9 / CONTEXTMENU - CLIC DROIT SUR LA ZONE9</p>
+        <div class="zone9">zone9</div>
+      </fieldset>
+  
+      <form method="post">
+        <fieldset>
+          <p class="titre">
+            10 / BLUR - CLIQUER AILLEURS APRES AVOIR CLIQUER SUR CET ELEMENT (zone
+            10)
+          </p>
+          <input
+            type="text"
+            name="prenom"
+            placeholder="prenom - zone10"
+            class="zone10"
+          /><br />
+        </fieldset>
+  
+        <fieldset>
+          <p class="titre">
+            11 / CHANGE - SELECTIONNER UNE AUTRE OPTION (zone11)
+          </p>
+          <select name="pays" class="zone11">
+            <option disabled selected>
+              zone 11 (change) Choisir une option différente
+            </option>
+            <option>France</option>
+            <option>Italie</option>
+            <option>Espagne</option></select
+          ><br />
+        </fieldset>
+  
+        <fieldset>
+          <p class="titre">
+            12 / KEYDOWN+KEYUP - APPUYEZ ET RELACHER UNE TOUCHE DU CLAVIER (zone
+            12)
+          </p>
+          <textarea
+            name="commentaire"
+            placeholder="commentaire"
+            class="zone12"
+          ></textarea
+          ><br />
+        </fieldset>
+      </form>
+<!-- Script -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="03_jquery_evenements.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selecteurs</title>
+    <meta charset="utf-8" />
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script> -->
+  </head>
+  <body>
+    <h1>
+      Comment selectionner des éléments de la page web (dom) pour effectuer des
+      traitements ?
+    </h1>
+
+    <!-- div.train{train$}*3 -->
+    <div class="avion">Avion1</div>
+    <div class="avion">Avion2</div>
+    <div class="avion">Avion3</div>
+
+    <div class="voiture">Voiture1</div>
+    <div class="voiture">Voiture2</div>
+    <div class="voiture">Voiture3</div>
+    <div class="voiture">Voiture4</div>
+    <!-- pour selectionner les parents -->
+    <div class="conteneur">
+      <div id="ancetre2">
+        <h2>Ancêtre1</h2>
+        <div>
+          <h3>Ancêtre2</h3>
+          <ul id="mesLivres">
+            <li>Livre1</li>
+            <li>Livre2</li>
+            <li>Livre3</li>
+            <li>Livre4</li>
+          </ul>
+        </div>
+      </div>
+      <!-- pour selectionner les enfants -->
+      <ul id="enfants">
+        <li class="children">children()</li>
+        <li class="find">find()</li>
+      </ul>
+    </div>
+    <table border="1">
+      <tr>
+        <td>TD #0</td>
+        <td>TD #1</td>
+        <td>TD #2</td>
+      </tr>
+      <tr>
+        <td>TD #3</td>
+        <td>TD #4</td>
+        <td>TD #5</td>
+      </tr>
+      <tr>
+        <td>TD #6</td>
+        <td>TD #7</td>
+        <td>TD #8</td>
+      </tr>
+    </table>
+
+    <p>paragraphe 1</p>
+    <p>paragraphe 2</p>
+    <p>paragraphe 3</p>
+    <p>paragraphe 4</p>
+    <p>paragraphe 5</p>
+
+    <section id="masection">Section</section>
+
+    <article>article</article>
+
+    <aside>aside</aside>
+
+    <span>span</span>
+
+    <div id="resultat">resultat...</div>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="02_jQuery_selecteur.js"></script>
+  </body>
+</html>
