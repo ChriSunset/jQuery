@@ -1,0 +1,37 @@
+------------------------------------css/--------------------------------------
+  :root {
+  --colorBlue: rgb(60, 60, 236);
+  --colorGreen: rgb(43, 122, 43);
+  --colorRed: rgb(180, 42, 42);
+  --colorBlack: rgb(17, 16, 16);
+  --colorWhite: rgb(250, 246, 246);
+}
+.formulaireFocus {
+  margin-bottom: 10px;
+}
+
+.formulaireFocus label {
+  display: inline-block;
+  min-width: 25%;
+}
+#h1Animate,
+#b4Animate,
+#h1GestionQ {
+  background-color: lightBlue;
+}
+.bleu {
+  background-color: lightBlue;
+}
+.orange {
+  background-color: orange;
+}
+#carreOrange,
+#carreOrange2,
+#carreOrange3,
+#carreOrange4,
+#carreOrange5 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 2px solid black;
+}
